@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>शांति इंश्योरेंस</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        /* Header Styles */
+        .header {
+            background: linear-gradient(135deg, #0066cc, #004499);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #ffd700;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,102,204,0.8), rgba(0,68,153,0.8)), url('https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 5rem 1rem;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .cta-button:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255,107,53,0.4);
+        }
+        
+        /* Services Section */
+        .services {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 20px;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #0066cc;
+            font-size: 2.5rem;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: #0066cc;
+            margin-bottom: 1rem;
+        }
+        
+        .service-card h3 {
+            color: #0066cc;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #003366;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 4rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">शांति इंश्योरेंस</div>
+            <nav class="nav-links">
+                <a href="#home">होम</a>
+                <a href="#services">सेवाएं</a>
+                <a href="#about">हमारे बारे में</a>
+                <a href="#contact">संपर्क करें</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>आपके भविष्य की सुरक्षा</h1>
+            <p>विश्वास और सुरक्षा के साथ - आपकी हर चिंता का समाधान</p>
+            <a href="#contact" class="cta-button">मुफ्त परामर्श लें</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">हमारी बीमा सेवाएं</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🛡</div>
+                <h3>जीवन बीमा</h3>
+                <p>परिवार के भविष्य की सुरक्षा के लिए व्यापक जीवन बीमा योजनाएं</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🏥</div>
+                <h3>स्वास्थ्य बीमा</h3>
+                <p>बेहतर स्वास्थ्य सुविधाएं और मेडिकल आपात स्थिति के लिए कवर</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🚗</div>
+                <h3>वाहन बीमा</h3>
+                <p>आपके वाहन की सुरक्षा और दुर्घटना कवर</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>गृह बीमा</h3>
+                <p>आपके घर और कीमती सामान की सुरक्षा</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">✈</div>
+                <h3>यात्रा बीमा</h3>
+                <p>सुरक्षित और चिंतामुक्त यात्रा के लिए</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">💰</div>
+                <h3>पेंशन योजना</h3>
+                <p>सुरक्षित और आरामदायक सेवानिवृत्ति के लिए</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="footer-content">
+            <h3>शांति इंश्योरेंस</h3>
+            <p>📞: +91-9876543210 | 📧: info@shantiinsurance.com</p>
+            <p>📍: 123 इंश्योरेंस भवन, मुख्य सड़क, मुंबई</p>
+            <p style="margin-top: 1rem;">&copy; 2024 शांति इंश्योरेंस. सर्वाधिकार सुरक्षित।</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
